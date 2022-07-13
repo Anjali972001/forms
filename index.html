@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+   body
+   {
+      background-color: rgb(131, 55, 202);
+   }
+   label
+   {
+      color:black;
+   }
+   h2{
+      text-align: center;
+   }
+   body{
+      text-align: center;
+   }
+</style>
+<body>
+    <h2>Form</h2>
+    <form action="backend.php" id="fid">
+        <label for="name">Name</label>
+        
+    <div>
+       <input type="text" id="name">
+    </div>
+    <br>
+    <label for="role">Role</label>
+     <div>
+        <input type="text" name="myRole" id="role">
+     </div>
+     <br>
+     
+     <div>
+        Email:<input type="email" name=" " >
+     </div>
+    
+     <br>
+     <div>
+        date:<input type="date" name="myDate" >
+     </div>
+     <br>
+     <div>
+        Number:<input type="number" name="myNumber" >
+     </div>
+     <br>
+     <label for="eligible">Are you eligible</label>
+     <div>
+       <input type="checkbox" name="YesorNor" checked id="eligible" >
+     </div>
+     <br>
+     <div>
+        Gender: Male<input type="radio" name="myGender" > FeMale<input type="radio" name="myGender" >
+        others<input type="radio" name="myGender" >
+     </div>
+     <br>
+     <div>
+        <label for="car">Car</label>
+        <Select name="Car " id="car"> 
+        <option value="ind" selected>Indigo</option>
+        <option value="sft">Swift</option>
+    </Select>
+     </div>
+     <br>
+     <div>
+        Write about yourself: <br><textarea name="write" cols="30" rows="10"  ></textarea>
+     </div>
+     <br>
+     <div>
+        <input type="submit" value="Submit Now " >
+        <input type="reset" value="reset Now" >
+
+     </div>
+    </form>
+   
+    
+</body>
+</html>
